@@ -63,7 +63,7 @@ header > p {
     padding-right: 10px;
     padding-left: 10px;
     margin: auto;
-    margin-bottom: 30px;
+    padding-bottom: 40px;
     text-shadow:  2px 2px 0px rgba(0, 0, 0, 0.253);
 }
 
@@ -194,8 +194,9 @@ aside > ul {
     columns: 2;
 }
 
-aside > ul > li {
+aside > ul > li > abbr{
     text-decoration: none;
+    
 }
 
 footer {
