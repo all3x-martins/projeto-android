@@ -4,10 +4,11 @@
 
 @font-face {
     font-family: Android ;
-    src: url(../fontes/idroid.otf);
+    src: url('../fontes/idroid.otf')
+
 }
 
-:root{
+:root {
     --cor0: #c5ebd6;
     --cor1: #83e1ad;
     --cor2: #3ddc84;
@@ -25,7 +26,7 @@
     padding: 0px;
 }
 
-body{
+body {
     background-color: var(--cor0);
     font-family: var(--fonte-padrao);
 
@@ -36,7 +37,7 @@ a.externo::after {
 
 }
 
-header{
+header {
     background-image: linear-gradient(to bottom, var(--cor3),
     var(--cor5));
     min-height: 150px;
@@ -73,29 +74,35 @@ nav {
     box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.356);
 }
 nav > a {
-    color: var(--cor1);
     padding: 10px;
     text-decoration: none;
     font-weight: bold;
-    transition-duration: 0.5s;
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: var(--cor4);
+    color: white;
+    text-align: center;
+    border-radius: 25px; /* Bordas arredondadas */
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
 } 
 
-nav > a:hover{
+nav > a:hover {
     background-color: var(--cor3);
     color: var(--cor5);
     text-decoration: underline;
     border-radius: 5px;
+    transform: translateY(-3px); /* Efeito de elevação */
 }
 main {
     min-width: 300px;
     max-width: 1000px;
-    margin: auto;
+    margin: 30px auto;
     margin-bottom: 30px;
     padding: 20px;
     background-color: white;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.411);
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
 main h1 {
@@ -140,15 +147,17 @@ main a {
 main a:hover {
     text-decoration: underline;
     color: var(--cor4);
+    transition: all 0.3s ease;
 
 }
 
 main img {
     width: 100%;
+    border-radius: 5px;
 
 }
 
-main img.pequena{
+main img.pequena {
     max-width: 350px;
     margin: 0 auto;
     display: block;
@@ -163,16 +172,16 @@ div.video {
 
 }
 
-div.video > iframe{
+div.video > iframe {
    position: absolute;
    top: 5%;
     left: 5%;
     width: 90%;
     height: 90%;
-
+    border-radius: 10px;
 }
 
-aside{
+aside {
     background-color: var(--cor1);
     padding: 10px;
     border-radius: 10px;
@@ -194,7 +203,7 @@ aside > ul {
     columns: 2;
 }
 
-aside > ul > li > abbr{
+aside > ul > li > abbr {
     text-decoration: none;
     
 }
@@ -219,4 +228,23 @@ footer a:hover {
     text-decoration: underline;
     color: var(--cor1);
 
+}
+
+@media (max-width: 600px) {
+    aside > ul {
+        columns: 1; /* 1 coluna em telas pequenas */
+    }
+}
+
+@media (max-width: 768px) {
+    header > h1 {
+        font-size: 2em;
+    }
+    header > p {
+        font-size: 0.9em;
+    }
+
+    main p {
+        font-size: 0.9em;
+    }
 }
