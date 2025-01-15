@@ -1,9 +1,8 @@
 # projeto-android
-Projeto criado durante o curso de HTML e CSS do Curso em Video
+**Descrição do Projeto: História do Mascote do Android**
 
-Projeto desenvolvido para contar um pouco da história do mascote do android
+Este projeto foi desenvolvido durante o curso de HTML e CSS do Curso em Video, com o objetivo de criar um website simples e informativo sobre a história do mascote do Android.
 
+O projeto foi uma otima oportunidade para aplicar o que aprendi no curso, criando um site funcional que oferece ao usuário uma experiência educativa sobre o mascote do Android.
 
-<br>
-
-![Captura de Tela (15)](https://user-images.githubusercontent.com/85321713/187115657-62f11b0a-4f2d-4c19-9fff-246933860610.png)
+**Tecnologias Utilizadas:** HTML5, CSS3
